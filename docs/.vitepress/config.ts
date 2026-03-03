@@ -40,7 +40,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/veed-io/veed-mcp-docs' },
+      { icon: 'github', link: 'https://github.com/veedstudio/veed-mcp-docs' },
     ],
     footer: {
       message: '<a href="https://www.veed.io/privacy">Privacy Policy</a> · <a href="https://www.veed.io/terms-of-use">Terms of Service</a>',
