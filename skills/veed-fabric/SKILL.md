@@ -20,9 +20,10 @@ Follow this sequence for the best user experience:
 
 1. **Browse characters** — Call `list_characters` to show the avatar carousel. Let the user pick.
 2. **Browse voices** — Call `list_voices` with the appropriate locale. Let the user pick.
-3. **Confirm before generating** — Call `confirm_fabric_video` to show cost estimate and parameters. Wait for user confirmation.
-4. **Generate the video** — Call `create_fabric_video` only after confirmation.
-5. **Check progress** — Call `get_generation_status` with the returned job ID. Videos typically take 1–2 minutes.
+3. **Ask for a script** — If the user hasn't already provided one, ask what the avatar should say.
+4. **Confirm before generating** — Call `confirm_fabric_video` to show cost estimate and parameters. Wait for user confirmation.
+5. **Generate the video** — Call `create_fabric_video` only after confirmation.
+6. **Check progress** — Call `get_generation_status` with the returned job ID. Videos typically take 1–2 minutes.
 
 Always let the user make selections interactively rather than choosing defaults for them.
 
