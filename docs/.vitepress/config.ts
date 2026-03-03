@@ -11,7 +11,7 @@ export default defineConfig({
     logo: 'https://www.google.com/s2/favicons?domain=veed.io&sz=64',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Tools Reference', link: '/tools-reference' },
+      { text: 'Tools & Resources Reference', link: '/tools-reference' },
       { text: 'Examples', link: '/examples' },
     ],
     sidebar: [
@@ -35,7 +35,7 @@ export default defineConfig({
         text: 'Reference',
         items: [
           { text: 'Usage Examples', link: '/examples' },
-          { text: 'Tools Reference', link: '/tools-reference' },
+          { text: 'Tools & Resources Reference', link: '/tools-reference' },
         ],
       },
     ],

@@ -113,3 +113,71 @@ Check AI Playground credit balance.
 | workspaceId | string (UUID) | No | Workspace to check (auto-selected if only one) |
 
 **Returns:** Available credits and total credits.
+
+---
+
+# Resources
+
+VEED Fabric exposes interactive UI widgets and server metadata as MCP resources. Widgets are rendered inline in the conversation when their associated tool is called.
+
+---
+
+## Server Information
+
+| Field | Value |
+|-------|-------|
+| URI | `mcp://server-info` |
+| MIME Type | `application/json` |
+
+Returns server metadata including name, version, description, capabilities, and a list of available tools with their parameters.
+
+---
+
+## Characters Carousel
+
+| Field | Value |
+|-------|-------|
+| URI | `ui://widget/characters-carousel.html` |
+| Associated Tool | `list_characters` |
+
+Interactive carousel widget for browsing and selecting AI avatar characters. Displays character thumbnails, names, and gender. The selected character ID is passed to `confirm_fabric_video` or `create_fabric_video`.
+
+---
+
+## Voice Selection
+
+| Field | Value |
+|-------|-------|
+| URI | `ui://widget/voice-selection.html` |
+| Associated Tool | `list_voices` |
+
+Interactive list widget for browsing and previewing available voices. Includes audio preview playback, locale, and gender information. The selected voice ID is passed to `confirm_fabric_video` or `create_fabric_video`.
+
+---
+
+## Video Confirmation
+
+| Field | Value |
+|-------|-------|
+| URI | `ui://widget/video-confirmation.html` |
+| Associated Tool | `confirm_fabric_video` |
+
+Confirmation dialog displayed before video generation. Shows a summary of:
+- Script text
+- Selected character (name, thumbnail)
+- Selected voice (name, locale, gender)
+- Target workspace
+- Credit balance and estimated cost
+
+Includes a confirm button to proceed with generation.
+
+---
+
+## Video Result
+
+| Field | Value |
+|-------|-------|
+| URI | `ui://widget/video-result.html` |
+| Associated Tool | `get_generation_status` |
+
+Progress indicator and video player widget. Shows real-time generation status (queued, processing, completed) and displays the finished video with an inline player when complete. Also shows credit consumption details.
