@@ -16,6 +16,9 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: npx skild publish
+      - run: |
+          mkdir -p ~/.skild
+          echo '{"schemaVersion":1,"registryUrl":"https://registry.skild.sh","token":"'"$SKILD_TOKEN"'"}' > ~/.skild/registry-auth.json
+          npx skild publish --dir skills/veed-mcp
         env:
           SKILD_TOKEN: ${{ secrets.SKILD_TOKEN }}
