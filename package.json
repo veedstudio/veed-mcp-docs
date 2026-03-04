@@ -1,9 +1,16 @@
 {
-  "name": "@veedstudio/veed-mcp",
+  "name": "veed-mcp",
   "version": "1.0.0",
   "type": "module",
   "description": "Claude Agent Skill for creating AI talking head videos with VEED Fabric",
-  "keywords": ["agent-skill", "claude-skill", "veed", "fabric", "video", "mcp"],
+  "keywords": [
+    "agent-skill",
+    "claude-skill",
+    "veed",
+    "fabric",
+    "video",
+    "mcp"
+  ],
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
