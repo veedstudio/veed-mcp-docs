@@ -63,7 +63,7 @@ Auto-discovered via the `agent-skill` keyword on npm.
 ### skild
 
 ```bash
-skild install veed-fabric-skill
+skild install @veedstudio/veed-fabric-skill
 ```
 
 Published to the [skild.sh](https://skild.sh) registry.
