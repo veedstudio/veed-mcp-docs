@@ -27,6 +27,6 @@ jobs:
       - run: |
           mkdir -p ~/.skild
           echo '{"schemaVersion":1,"registryUrl":"https://registry.skild.sh","token":"'"$SKILD_TOKEN"'"}' > ~/.skild/registry-auth.json
-          npx skild publish --dir skills/veed-mcp --skill-version "${GITHUB_REF_NAME#v}"
+          npx skild publish --dir skills/veed-fabric-skill --skill-version "${GITHUB_REF_NAME#v}"
         env:
           SKILD_TOKEN: ${{ secrets.SKILD_TOKEN }}

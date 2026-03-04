@@ -1,5 +1,5 @@
 ---
-name: veed-mcp
+name: veed-fabric-skill
 description: >-
   Guide for creating AI talking head videos with VEED Fabric MCP tools.
   Use when the user wants to generate videos with AI avatars, browse
@@ -17,11 +17,11 @@ VEED Fabric lets users generate professional talking head videos with AI avatars
 
 ## Prerequisites
 
-This skill requires the [VEED Fabric MCP server](https://veedstudio.github.io/veed-mcp-docs/) to be connected. It provides all the tools referenced below. See platform-specific setup:
+This skill requires the [VEED Fabric MCP server](https://veedstudio.github.io/veed-fabric-mcp/) to be connected. It provides all the tools referenced below. See platform-specific setup:
 
-- [Claude](https://veedstudio.github.io/veed-mcp-docs/claude.html)
-- [ChatGPT](https://veedstudio.github.io/veed-mcp-docs/chatgpt.html)
-- [Goose](https://veedstudio.github.io/veed-mcp-docs/goose.html)
+- [Claude](https://veedstudio.github.io/veed-fabric-mcp/claude.html)
+- [ChatGPT](https://veedstudio.github.io/veed-fabric-mcp/chatgpt.html)
+- [Goose](https://veedstudio.github.io/veed-fabric-mcp/goose.html)
 
 ## Recommended Workflow
 

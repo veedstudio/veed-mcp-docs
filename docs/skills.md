@@ -6,7 +6,7 @@ An Agent Skill is a modular set of instructions that teaches AI assistants best 
 
 ## What the VEED Fabric Skill Includes
 
-The `veed-mcp` skill provides:
+The `veed-fabric-skill` skill provides:
 
 - **Recommended workflow** — step-by-step guide for creating talking head videos (browse characters → pick voice → confirm → generate → check status)
 - **Tool usage tips** — parameter guidance, required vs optional fields, and common pitfalls for each VEED Fabric tool
@@ -20,16 +20,16 @@ The `veed-mcp` skill provides:
 Clone the repo and copy the skill folder:
 
 ```bash
-git clone https://github.com/veedstudio/veed-mcp-docs.git
+git clone https://github.com/veedstudio/veed-fabric-mcp.git
 # Personal (available in all projects)
-cp -r veed-mcp-docs/skills/veed-mcp ~/.claude/skills/
+cp -r veed-fabric-mcp/skills/veed-fabric-skill ~/.claude/skills/
 # Or project-level (shared with collaborators)
-cp -r veed-mcp-docs/skills/veed-mcp .claude/skills/
+cp -r veed-fabric-mcp/skills/veed-fabric-skill .claude/skills/
 ```
 
 ### Claude.ai
 
-1. Download the [`skills/veed-mcp/`](https://github.com/veedstudio/veed-mcp-docs/tree/main/skills/veed-mcp) folder as a zip
+1. Download the [`skills/veed-fabric-skill/`](https://github.com/veedstudio/veed-fabric-mcp/tree/main/skills/veed-fabric-skill) folder as a zip
 2. Go to **Settings > Features** in Claude.ai
 3. Upload the skill
 
@@ -41,13 +41,13 @@ Upload via the skills endpoint:
 curl -X POST https://api.anthropic.com/v1/skills \
   -H "x-api-key: $ANTHROPIC_API_KEY" \
   -H "content-type: application/json" \
-  -d '{"skill_id": "veed-mcp"}'
+  -d '{"skill_id": "veed-fabric-skill"}'
 ```
 
 ### npm
 
 ```bash
-npm install veed-mcp
+npm install veed-fabric-skill
 ```
 
 The package is published with the `agent-skill` keyword for discoverability.
@@ -55,7 +55,7 @@ The package is published with the `agent-skill` keyword for discoverability.
 ### skillpm
 
 ```bash
-skillpm install veed-mcp
+skillpm install veed-fabric-skill
 ```
 
 Auto-discovered via the `agent-skill` keyword on npm.
@@ -63,7 +63,7 @@ Auto-discovered via the `agent-skill` keyword on npm.
 ### skild
 
 ```bash
-skild install veed-mcp
+skild install veed-fabric-skill
 ```
 
 Published to the [skild.sh](https://skild.sh) registry.
@@ -74,4 +74,4 @@ The skill follows the open [Agent Skills spec](https://agentskills.io). Any tool
 
 ## Source
 
-The skill source is available on GitHub: [`veedstudio/veed-mcp-docs/skills/veed-mcp`](https://github.com/veedstudio/veed-mcp-docs/tree/main/skills/veed-mcp)
+The skill source is available on GitHub: [`veedstudio/veed-fabric-mcp/skills/veed-fabric-skill`](https://github.com/veedstudio/veed-fabric-mcp/tree/main/skills/veed-fabric-skill)

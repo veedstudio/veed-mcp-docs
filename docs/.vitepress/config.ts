@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'VEED Fabric MCP',
   description: 'Documentation for the VEED Fabric MCP Server — AI Talking Video Generator',
-  base: '/veed-mcp-docs/',
+  base: '/veed-fabric-mcp/',
   head: [
     ['link', { rel: 'icon', href: 'https://www.google.com/s2/favicons?domain=veed.io&sz=64' }],
   ],
@@ -42,7 +42,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/veedstudio/veed-mcp-docs' },
+      { icon: 'github', link: 'https://github.com/veedstudio/veed-fabric-mcp' },
     ],
     footer: {
       message: '<a href="https://www.veed.io/privacy">Privacy Policy</a> · <a href="https://www.veed.io/terms-of-use">Terms of Service</a>',
