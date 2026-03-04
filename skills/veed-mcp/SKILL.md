@@ -5,14 +5,23 @@ description: >-
   Use when the user wants to generate videos with AI avatars, browse
   characters or voices, or check video generation status and credits.
 license: Apache-2.0
+compatibility: Requires the VEED Fabric MCP server (https://www.veed.io/api/v1/mcp)
 metadata:
   author: veedstudio
-  version: "1.0.0"
+  version: "1.2.2"
 ---
 
 # VEED Fabric Video Creation
 
 VEED Fabric lets users generate professional talking head videos with AI avatars directly from a conversation. No camera or editing skills required.
+
+## Prerequisites
+
+This skill requires the [VEED Fabric MCP server](https://veedstudio.github.io/veed-mcp-docs/) to be connected. It provides all the tools referenced below. See platform-specific setup:
+
+- [Claude](https://veedstudio.github.io/veed-mcp-docs/claude.html)
+- [ChatGPT](https://veedstudio.github.io/veed-mcp-docs/chatgpt.html)
+- [Goose](https://veedstudio.github.io/veed-mcp-docs/goose.html)
 
 ## Recommended Workflow
 

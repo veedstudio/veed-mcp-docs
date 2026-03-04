@@ -1,6 +1,6 @@
 {
   "name": "veed-mcp",
-  "version": "1.0.0",
+  "version": "1.2.2",
   "type": "module",
   "description": "Claude Agent Skill for creating AI talking head videos with VEED Fabric",
   "keywords": [

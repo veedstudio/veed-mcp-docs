@@ -13,6 +13,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Tools & Resources Reference', link: '/tools-reference' },
       { text: 'Examples', link: '/examples' },
+      { text: 'Agent Skill', link: '/skills' },
     ],
     sidebar: [
       {
@@ -36,6 +37,7 @@ export default defineConfig({
         items: [
           { text: 'Usage Examples', link: '/examples' },
           { text: 'Tools & Resources Reference', link: '/tools-reference' },
+          { text: 'Agent Skill', link: '/skills' },
         ],
       },
     ],
