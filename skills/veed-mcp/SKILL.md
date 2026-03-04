@@ -1,5 +1,5 @@
 ---
-name: veed-fabric
+name: veed-mcp
 description: >-
   Guide for creating AI talking head videos with VEED Fabric MCP tools.
   Use when the user wants to generate videos with AI avatars, browse
