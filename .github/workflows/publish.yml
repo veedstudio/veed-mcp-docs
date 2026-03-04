@@ -5,7 +5,7 @@ on:
     tags: ['v*']
 
 jobs:
-  publish:
+  npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,6 +16,14 @@ jobs:
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  skild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - run: |
           mkdir -p ~/.skild
           echo '{"schemaVersion":1,"registryUrl":"https://registry.skild.sh","token":"'"$SKILD_TOKEN"'"}' > ~/.skild/registry-auth.json

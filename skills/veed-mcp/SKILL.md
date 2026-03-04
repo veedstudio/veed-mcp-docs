@@ -8,7 +8,7 @@ license: Apache-2.0
 compatibility: Requires the VEED Fabric MCP server (https://www.veed.io/api/v1/mcp)
 metadata:
   author: veedstudio
-  version: "1.2.1"
+  version: "1.2.2"
 ---
 
 # VEED Fabric Video Creation
