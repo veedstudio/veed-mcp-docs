@@ -47,7 +47,7 @@ curl -X POST https://api.anthropic.com/v1/skills \
 ### npm
 
 ```bash
-npm install @veedstudio/veed-mcp
+npm install veed-mcp
 ```
 
 The package is published with the `agent-skill` keyword for discoverability.
@@ -63,7 +63,7 @@ Auto-discovered via the `agent-skill` keyword on npm.
 ### skild
 
 ```bash
-skild install @veedstudio/veed-mcp
+skild install veed-mcp
 ```
 
 Published to the [skild.sh](https://skild.sh) registry.
