@@ -7,6 +7,7 @@ Connect VEED Fabric to your preferred AI assistant.
 - [ChatGPT](./chatgpt) - OpenAI's ChatGPT
 - [Claude](./claude) - Anthropic's Claude
 - [Goose](./goose) - Block's Goose
+- [Zapier](./zapier) - Zapier MCP
 
 ## Documentation
 

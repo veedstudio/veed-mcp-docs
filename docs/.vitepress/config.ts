@@ -30,6 +30,7 @@ export default defineConfig({
           { text: 'Claude', link: '/claude' },
           { text: 'ChatGPT', link: '/chatgpt' },
           { text: 'Goose', link: '/goose' },
+          { text: 'Zapier', link: '/zapier' },
         ],
       },
       {
